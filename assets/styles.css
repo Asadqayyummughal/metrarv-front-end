@@ -1,0 +1,1005 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* all Fonts  */
+@font-face {
+    font-family: futura_bold;
+    src: url("../assets/fonts/Futura_Bold_font.ttf");
+}
+
+@font-face {
+    font-family: futura_light;
+    src: url("../assets/fonts/futura_light_bt.ttf");
+}
+
+@font-face {
+    font-family: futra_medium;
+    src: url("../assets/fonts/Futura\ Std\ Extra\ Bold.ttf");
+}
+
+@font-face {
+    font-family: p_marker;
+    src: url("../assets/fonts/PermanentMarker.ttf");
+}
+
+@font-face {
+    font-family: futuraBT_light;
+    src: url("../assets/fonts/futura_light_bt.ttf");
+}
+
+body {
+    font-family: fatura-bold;
+}
+
+/* all Fonts  Ends */
+.navbar {
+    position: relative;
+    color: white;
+    background: #000;
+    width: 100%;
+}
+
+.nav_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.div-logo {
+    position: absolute;
+    top: 23px;
+    left: 139px;
+    width: 187px;
+    z-index: 9;
+}
+
+.navbar .nav_wrapper .nav_col-1,
+.navbar .nav_wrapper .nav_col_3 {
+    width: 20%;
+    border: 1px solid black;
+
+}
+
+.navbar .nav_wrapper .nav_col_2 {
+    width: 50%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'futura-Medium';
+    letter-spacing: 1px;
+}
+
+.nav-list>li {
+    margin: 0 5%;
+}
+
+.div-logo>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav_addresses {
+    position: absolute;
+    right: 46px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav_addresses>h3 {
+    font-size: 16px;
+    color: #999999;
+    font-family: futura_bold;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.box {
+    align-self: flex-end !important;
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+
+.btn_line {
+    position: absolute;
+    width: 32px;
+    height: 5px;
+    background-color: #a30017;
+    border-radius: 5px;
+    pointer-events: none;
+
+}
+
+/*nav secton end */
+.sec-banner {
+    position: relative;
+    width: 100%;
+}
+
+.sec-banner>.banner-image {
+    position: relative;
+}
+
+.align-sec-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-heading {
+    font-size: 50px;
+    font-family: futura-medium;
+}
+.banner-sub-heading {
+    font-size: 22px;
+}
+
+.align-sec-content>button {
+    border: 1px solid white;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.sec-banner>.banner-image::after,
+ .rv_parts>.banner_image::after{
+    width: 100%;
+    background: black;
+    opacity: 0.7;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 0;
+}
+
+.feature-inventory {
+    margin-top: 20px;
+}
+
+.feature-row .col-lg-12>h2 {
+    font-size: 20px;
+    color: black;
+    opacity: 100%;
+    font-weight: bolder;
+}
+
+.btn-border-radius {
+    border: none;
+    border-radius: 24px !important;
+    font-family: fautra-bold;
+
+}
+
+.feature-inventory .container .feature-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* .featured-cards{
+    
+} */
+.featured-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.featured-card>h6 {
+    font-weight: bolder;
+    font-size: 15px;
+    color: black;
+    font-family: fatturaBT Medium;
+    ;
+}
+
+.featured-card .price {
+    color: grey;
+    font-size: small;
+}
+
+.featured-card:hover {
+    opacity: 0.7;
+}
+
+.free-starter-kit {
+    position: relative;
+    color: white;
+    margin-top: 1%;
+}
+
+.free-starter-kit .banner-image {
+    position: relative;
+
+}
+
+.free-starter-kit>.banner-image::after,
+.nature_sec>.banner_image::after{
+    width: 100%;
+    background: white;
+    opacity: 0.3;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 0;
+}
+
+.images-gallery-sec {
+    margin-top: 1%;
+}
+
+.row1-col-1,
+.row1-col-2,
+.row2-col-1,
+.row2-col-2 {
+    position: relative;
+    padding: 3px;
+}
+
+.images-gallery-sec .gallery-img {
+    position: relative;
+    height: 100%;
+}
+
+.gallery-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row1-col-1 .gallery-img::after,
+.row1-col-2 .gallery-img::after,
+.row2-col-1 .gallery-img::after,
+.row2-col-2 .gallery-img::after {
+    background: black;
+    opacity: 0.7;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  
+    z-index: 0;
+    object-fit: cover;
+}
+
+.images-gallery-sec .container .brands_heading {
+    text-align: center;
+    color: black;
+    opacity: 100% !important;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer-sec {
+    background-color: #800000;
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.rapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.rapper .col-1,
+.col-2,
+.col-3,
+.col-4 {
+    width: 25%;
+}
+
+.footer-sec .col-5 {
+    padding-top: 5px;
+    width: 100%;
+    background-color: #700000;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media_styling {
+    width: fit-content;
+    padding: 5px !important;
+    background-color: black;
+    color: white;
+}
+
+.rapper .div-logo {
+    width: 180px;
+    position: relative;
+}
+
+.rapper .col-1>image {
+    width: 100% !important;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.list-title {
+    font-size: 10px;
+    font-weight: bold !important;
+}
+
+.icons-shape {
+    background-color: black;
+    padding: 3px !important;
+}
+
+.footer-sec>ul {
+    list-style: none;
+}
+
+.col-2>h4,
+.col-3>h4,
+.col-4>h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+    font-family: 'futura-Medium';
+    font-weight: 600;
+}
+
+.button {
+    background: #a30017;
+    border: 1px solid #a30017;
+    padding: 10px 33px;
+    border-radius: 24px;
+    color: #fff;
+    font-family: 'futura-Medium';
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.box>a {
+    color: #a30017;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.box>a:hover {
+    color: #700000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* About us section end*/
+
+.aboutus_banner {
+    position: relative;
+    max-width: 100%;
+}
+
+.aboutus_banner>.banner-image {
+    position: relative;
+}
+
+section.aboutus_banner .banner-image::after {
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 0;
+}
+
+.about_content>h1 {
+    font-size: 40px;
+    font-family: p_marker;
+    color: white;
+}
+
+
+.aboutus_info_content {
+    margin: 0 auto;
+    width: 65%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-around !important;
+}
+
+.about_para {
+    text-align: center;
+    font-size: 15px;
+    font-family: futura_light;
+    text-indent: 50px;
+    row-gap: 5px;
+    color: #000;
+
+}
+
+.about_content {
+    position: absolute;
+}
+
+/* About us section End*/
+/* history sec start */
+.history_sec {
+    background-color: #e8e8e8;
+    max-width: 100%;
+    background-size: cover;
+    margin-top: 3%;
+}
+
+.history_sec .history_content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20%;
+}
+
+.history-heading>p {
+    font-family: futra_medium !important;
+    font-weight: bold;
+}
+
+.history_content>p {
+    font-family: futura_light;
+}
+
+.history_content>p,
+h3,
+button {
+    margin: 30px;
+}
+
+.history_sec_image {
+    width: 100%;
+    height: 100% !important;
+}
+
+.history_sec_image>image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* history sec end */
+/* TEAM sec end */
+.team_sec {
+    margin-top: 2%;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+.teamWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_heading {
+    text-align: center;
+}
+
+.team_heading>h2 {
+    font-family: futura_bold;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.team_heading>p {
+    font-family: futura_bold;
+    font-size: 17px;
+}
+
+.team_card {
+    text-align: center;
+    margin: 5px;
+    flex: 0 0 calc((100-50)/5);
+    min-width: 200px;
+    max-width: 350px;
+}
+
+.team_card>.team_image {
+    width: 100%;
+    height: 100%;
+}
+
+.team_image>image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team_card .employe_name {
+    font-family: futura_medium !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.team_card .employee_designation {
+    font-size: 10px;
+    color: #7f7f7f;
+    text-align: center;
+}
+
+/* TEAM sec end */
+/* CARRERS sec START */
+.carrers_sec {
+    max-width: 100%;
+    color: #000;
+    padding: 10px;
+}
+
+.carrers_sec .container .carrers_heading {
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-family: futura_bold;
+    /* text-align: center; */
+}
+
+.carrers_sec .container .carrersInfoHead {
+    font-family: futura_bold;
+    font-size: 12px;
+    font-weight: 700;
+
+
+}
+
+.carrers_sec .container .carrersParagraph {
+    font-family: futura_light;
+    font-size: 12px;
+    font-weight: 600px;
+}
+
+/* .carrers_sec .container .applicationForm>form{
+            font-size: 10px;
+            font-family: futura_medium;
+            display: flex ;
+            flex-wrap: wrap;
+        } */
+.carrers_sec .container .form_group {
+    width: 100% !important;
+}
+
+.carrers_sec .container .applicationForm .form_ctrl {
+    width: 100% !important;
+    border: 1px solid black;
+    color: black !important;
+    font-size: 10px;
+    font-family: futura_bold;
+    padding: 15px;
+    margin-bottom: 28px;
+}
+
+.checkboxWraper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.label_content {
+    font-size: 12px;
+    color: black;
+    font-family: futura_medium;
+}
+
+.sbmt_btn {
+    margin-top: 20px;
+    text-align: center !important;
+}
+
+.box {
+    display: none !important;
+}
+
+
+
+
+.nav_addresses {
+    overflow: hidden;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    background-color: #a30017;
+    top: 341%;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+    flex-direction: column;
+    display: none;
+}
+
+/* CARRERS sec end */
+/* services sec Start*/
+.services_sec {
+    width: 100% !important;
+    position: relative;
+}
+.services_sec .banner_image{
+    position: relative;
+    min-height: 350px;
+
+}
+.services_sec .banner_image>img {
+    width: 100% !important;
+    height: 100%;
+}
+.services_sec .banner_image::after{
+    width: 100%;
+    background: black;
+    opacity: 0.7;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 0;
+}
+
+.services_sec .banner-content .banner_btn>button{
+    font-family: futura_bold;
+
+}
+.services_sec .banner_image{
+    min-height: 350px !important;
+}
+.first_head{
+    font-family: p_marker;
+    font-size:37px !important;
+}
+.banner_para{
+    font-size: 16px;
+    font-family: fututa_light;
+}
+.first_head , .banner_para , .button{
+    margin: 20px;
+}
+.nature_sec{
+    position: relative;
+}
+.nature_sec .banner_image{
+    min-height: 350px;
+}
+.nature_sec .banner_image>img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.form_wraper{
+    width: 50%;
+    margin: 0 auto;
+}
+.form_head{
+    text-align: center;
+    font-family: 'futura_bold';
+}
+.form_ctrl{
+    width: 100% ;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 5px;
+    color: black;
+}
+.form_sec #txt_area{
+    text-align: left !important    ;
+}
+.form_sec .banner_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services_sec .banner_image{
+    min-height: 350px;
+}
+.services_sec .banner_image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.form_chek{
+    font-size: 11px;
+    font-family: futura_light;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.rv_parts{
+    position: relative;
+}
+.rv_parts .banner_image{
+    position:  relative;
+    min-height: 350px;
+}
+section.rv_parts .banner_image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rv_parts .banner_image{
+    position: relative;
+    min-height: 350px;
+}
+.rv_form_sec .img_rapper{
+    width: 384px;
+    height: 567px;
+}
+
+.rv_form_sec .img_rapper>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.form_rapper .order_head{
+    text-align: center;
+    font-family: futura_bold;
+}
+.form_rapper .form_ctrl{
+    padding: 5px 8px;
+    width: 100%;
+}
+.form_rapper textarea #t_area {
+  text-align: left;
+  height: auto;
+
+}
+.form_rapper .banner_btn{
+    text-align: center;
+  }
+
+
+/* Media quries start
+for large devices*/
+@media screen and (max-width:1300px) {
+    .div-logo {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        object-fit: cover;
+        width: 130px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .nav-list {
+        font-size: 10px;
+    }
+
+    .navbar .div-logo>image {
+        width: 150px;
+    }
+    .button{
+        padding: 10px 26px;
+        letter-spacing: 0px;
+    }
+
+    .banner-heading {
+        font-size: 30px
+    }
+
+    .banner-sub-heading {
+        font-size: 15px;
+    }
+    .aboutus_info_content
+    {
+        width: 100% !important;
+    }
+    .first_head{
+        font-size: 30px !important
+        
+    }
+    .banner_para{
+        font-size: 14px;
+        font-family: fututa_light;
+    
+    }
+    .first_head , .banner_para , .button{
+        margin-top: 10px !important;
+    }
+    .rv_form_sec .img_rapper{
+        height: 630px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        display: block !important;
+    }
+    .first_head{
+        font-size: 21px !important;
+    }
+    .banner_para{
+        font-size: 14px;
+        font-family: fututa_light;
+    
+    }
+    .first_head , .banner_para , .button{
+        margin-top: 5px !important;
+    }
+
+    .navbar nav.nav_wrapper {
+        padding: 20px;
+    }
+  .button{
+    padding: 9px 20px;
+    font-size: 13px;
+  }
+    .nav-list {
+        position: absolute;
+        background-color: #a30017;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        z-index: 2;
+        display: none;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+
+    }
+
+    .nav_addresses {
+        overflow: hidden;
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: absolute;
+        background-color: #a30017;
+        top: 341%;
+        left: 0px;
+        width: 100%;
+        z-index: 2;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-list>li,
+    .nav_addresses>h3 {
+        display: block;
+        border-bottom: 1px solid white;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        margin: 8px;
+        padding-bottom: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+    .nav_addresses {
+        display: none !important;
+    }
+    .nav_col-1 {
+        padding: 20px;
+    }
+
+    .div-logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+    .banner-heading {
+        font-size: 20px;
+    }
+
+    .banner-sub-heading {
+        font-size: 10;
+    }
+   
+    .footer-sec .rapper .col-1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-sec .rapper .col-2,
+    .col-3,
+    .col-4 {
+        margin-top: 10px;
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .col-2>h4,
+    .col-3>h4,
+    .col-4>h4 {
+        font-size: 10px;
+        font-weight: 100;
+    }
+   
+
+    /* .sec_aboutus_info .container .aboutus_info_content {
+     
+    } */
+   
+  
+}
+
+@media screen and (max-width:576px) {
+    .first_head{
+        font-size: 15px !important;
+    }
+    .banner_para{
+        font-size: 13px;
+        font-family: fututa_light;
+        width: 100%;
+        text-align: left;
+        line-height: 13px;
+    }
+    .first_head, .banner_para , .button{
+        margin-top: -4px !important;
+        
+    }
+    .button{
+        font-family: 11px;
+        padding: 7px 20px;
+
+    }
+    .banner-heading {
+        font-size: 15px;
+    }
+
+    .banner-sub-heading {
+        font-size: 2px;
+    }
+    .form_head{
+        text-align: center;
+    }    
+     
+    /* .sec-banner .button {
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    } */
+
+}
+
+/* Media quries end*/
